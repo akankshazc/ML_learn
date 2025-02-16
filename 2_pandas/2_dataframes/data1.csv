@@ -1,16 +1,16 @@
-Name,Age,Occupation
-SecUnit,4,Security
-Mensah,40,Team Leader
-Ratthi,30,Biology Specialist
-Pin-lee,35,Lawyer
-Gurathin,35,Systems Specialist
-Bharadwaj,45,Scientist
-Volescu,50,Scientist
-Perihelion,19,Research Vessel
-Iris,20,Mission Leader
-Seth,42,Team Leader
-Martin,45,Team Leader
-Kydi,38,Scientist
-Tariq,28,Mission Specialist
-Three,7,Security
-Sirat,37,Negotiator
+Name,Age,Occupation,Organization
+SecUnit,4,Security,PreservationAux
+Mensah,40,Team Leader,PreservationAux
+Ratthi,30,Biology Specialist,PreservationAux
+Pin-lee,35,Lawyer,PreservationAux
+Gurathin,35,Systems Specialist,PreservationAux
+Bharadwaj,45,Scientist,PreservationAux
+Volescu,50,Scientist,PreservationAux
+Perihelion,19,Research Vessel,University
+Iris,20,Mission Leader,University
+Seth,42,Team Leader,University
+Martin,45,Team Leader,University
+Kydi,38,Scientist,University
+Tariq,28,Mission Specialist,University
+Three,7,Security,University
+Sirat,37,Negotiator,The Company
