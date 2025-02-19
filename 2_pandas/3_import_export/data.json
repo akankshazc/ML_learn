@@ -1,0 +1,22 @@
+[
+    {
+        "Patient":"John",
+        "Age":25,
+        "Diagnosis":"Schizophrenia"
+    },
+    {
+        "Patient":"Jane",
+        "Age":60,
+        "Diagnosis":"Diabetes"
+    },
+    {
+        "Patient":"Anne",
+        "Age":35,
+        "Diagnosis":"Depression"
+    },
+    {
+        "Patient":"Bob",
+        "Age":49,
+        "Diagnosis":"Hypertension"
+    }
+]
