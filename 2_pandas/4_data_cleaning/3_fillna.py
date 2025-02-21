@@ -1,17 +1,22 @@
 import pandas as pd
+import numpy as np
 
-# define a dictionary with sample data which includes some missing values
+# create a dataframe with missing values
 data = {
-    'A': [1, 2, 3, None, 5],
-    'B': [None, 2, 3, 4, 5],
-    'C': [1, 2, None, None, 5]
+    'A': [1, 2, np.nan, 4, 5],
+    'B': [np.nan, 2, 3, 4, 5],
+    'C': [1, 2, 3, np.nan, 5],
+    'D': [1, 2, 3, 4, 5]
 }
-
 df = pd.DataFrame(data)
 
-print("Original Data:\n", df)
+# replace missing values with mean
+df['A'].fillna(value=df['A'].mean(), inplace=True)
 
-# filling NaN values with the mean of each column
-df.fillna(df.mean(), inplace=True)
+# replace missing values with median
+df['B'].fillna(value=df['B'].median(), inplace=True)
 
-print("\nData after filling NaN with mean:\n", df)
+# replace missing values with mode
+df['C'].fillna(value=df['C'].mode()[0], inplace=True)
+
+print(df)
