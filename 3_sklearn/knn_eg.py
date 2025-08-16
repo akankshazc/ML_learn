@@ -1,6 +1,7 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, classification_report
 
 # Load the Iris dataset
 iris = load_iris()
@@ -14,8 +15,9 @@ knn = KNeighborsClassifier(n_neighbors=3)
 knn.fit(X_train, y_train)
 
 # Make predictions on the test data
-predictions = knn.predict(X_test)
+y_pred = knn.predict(X_test)
 
 # Evaluate the model
-accuracy = knn.score(X_test, y_test)
-print("Accuracy:", accuracy)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.2f}")
+print(classification_report(y_test, y_pred))
