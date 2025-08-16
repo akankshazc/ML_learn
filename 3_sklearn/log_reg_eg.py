@@ -1,6 +1,4 @@
 # Importing necessary libraries
-import numpy as np
-import matplotlib.pyplot as plt
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -31,3 +29,4 @@ y_pred = log_reg.predict(X_test)
 # Evaluating the model
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
+print(classification_report(y_test, y_pred))
